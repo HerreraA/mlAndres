@@ -1,0 +1,36 @@
+<form action="/crear-producto" method="post" class="create-form">
+    <div>
+       <label >Nombre del producto</label> 
+       <input type="text" name="nombre" id=""> 
+    </div>
+    <div>
+        <label >Precio</label> 
+        <input type="text" name="precio" id="" placeholder="123.56"> 
+     </div>
+     <div>
+        <label >categoria</label>
+        <select name="categoria">
+            <option value="hogar">Hogar</option>
+            <option value="electro">Electro</option>
+            <option value="indumentaria">Indumentaria</option>
+        </select>
+     </div>
+     <div>
+        <label >ciudad</label>
+        <select name="categoria">
+            <option value="baires">Buenos Aires</option>
+            <option value="ros">Rosario</option>
+            <option value="mdz">Mendoza</option>
+        </select>
+     </div>
+     <div>
+        <label>descripcion</label>
+        <textarea name="descripcion"></textarea>
+     </div>
+     <div>
+        <label >Está en oferta</label> 
+        <input type="radio" name="en oferta" id=""> 
+     </div>
+     <button type="reset">borrar</button>
+     <button type="submit">enviar</button>
+    </form>

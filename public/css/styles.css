@@ -1,0 +1,349 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+
+body {
+        font-family: 'Roboto', sans-serif; 
+        font-size: 12px;
+        margin: 0%;
+        background-color: #ebebeb;
+    }   
+
+main section article i{
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        top: -15px;
+        }
+
+.main-navbar ul {
+    list-style: none;
+    margin:0;
+    padding: 0;
+} 
+
+.main-navbar a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+.main-navbar{
+    display: none;
+} 
+
+.main-header {
+    background-color: #EAC926;
+    padding: 20px;
+    width: 100%;
+
+}
+
+.logo {
+    width:50%;
+    margin:auto;
+    padding: 5%;
+}
+
+.main-header-top-bar{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.input{
+    margin: auto;
+    margin-right: 0px;
+    width: 40%;
+}
+
+#lupa {
+    margin: auto;
+    margin-left: 0px;
+    background-color: white;
+    padding: 2px;
+    border: 1px solid rgb(118, 118, 118);
+}
+
+.cuotas {
+    font-weight: 400;
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+    padding: 3%;
+}
+
+.hamburguer-button {
+    display: block;
+    background-color: #03264c;
+    color: white;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+main { 
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.titulares {
+    font-size: 24px;
+}
+
+.articulos{
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+/*article.separation:hover{
+    box-shadow : 0px 0px 10px 0px rgba(100,100,100,0.75);
+}*/
+
+.precios {
+    font-size: 18px;
+    flex-grow: 0.30
+}
+ 
+.descuentos {
+    font-size: 16px;
+    color: #44ab64;
+    flex-grow: 0.70;
+}
+
+.descripciones {
+    font-size: 16px;
+    display: none;    
+}
+
+article.articulos div .descripciones{
+    visibility: hidden;
+    
+   }
+article.articulos:hover div .descripciones{
+ visibility: visible;
+}
+.articulos {
+    padding-bottom:10px;
+ }
+ main section div .contenedor-article{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     
+ }
+ 
+section div {
+     display: flex;
+     justify-content: space-around;
+     align-items: flex-start;
+     border-top: 1px solid #ebebeb;
+     padding: 15px;
+ }
+ 
+ .fa-solid.fa-truck {
+     font-weight: 900;
+     padding: 10px;
+     color: #44ab64;
+     border: 1px solid grey;
+     border-radius: 50%;
+     line-height: 15px;
+ }
+ 
+ .fa-truck:hover{
+  transform: rotateZ(-90deg);
+  transition-duration: 1s;
+ }
+ 
+ .articulos img{
+     display: flex;
+     margin: auto;
+     width: 90%;
+ }
+ 
+ p{
+     display: block;
+ }
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+}   
+
+.icono {
+    font-size: 2em; 
+    margin-bottom: 10px;
+    color: #0435b2;
+}
+
+.final {
+    text-align: left;
+
+}
+
+form button{
+    background-color: #097082;
+    color:white;
+    padding: 5px;
+ }    
+
+form button:hover{
+    background-color: #0022AA;
+ }
+
+.precio, .descuentos{
+    display: inline-block;
+}
+
+.create-form{
+    padding: 15px;
+}
+
+footer i:hover{
+color: #097082;
+}
+
+@media(min-width: 361px){
+main section div .contenedor-article{
+width: 45%;
+    }
+}
+
+@media(min-width: 769px ) {
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .logo {
+        width:50%;
+        margin:auto;
+        padding: 5%;
+    }
+    .input{
+        margin: auto;
+        width: 50%;
+    }
+    .cuotas{
+        width: 50%;
+        text-align: right;
+    }
+    #lupa{
+        display: none;
+    }
+
+    .seccion1, .seccion2{
+    display: flex;
+    }
+    .articulos{
+        box-shadow : 0px 0px 10px 0px rgba(100,100,100,0.75); 
+    }
+
+    main section div .contenedor-article{
+        width: 48%;
+    }
+
+    .descripciones{     
+        display: block;
+        padding: 15px;
+        margin-left: 5%;
+    }
+
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-navbar ul{
+        display: flex;
+    }
+
+    .main-navbar li{
+        margin: 0 5px;
+    }
+.search{
+    display: none;
+    }
+    .hamburguer-button {
+        display: none;
+    }
+
+}
+
+
+@media (min-width: 1200px){
+
+    .main-header-top-bar, .main-navbar{
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    .main-header-top-bar{
+        align-items: center;
+    }
+
+    .main-navbar{
+        margin-top: 40px;
+    }
+    .main-navbar li{
+        margin: 0 10px;
+    }
+
+    .main-navbar a {
+        font-size: 19px;
+    }
+    #lupa{
+        display: none;
+    }
+
+    .cuotas{
+        max-width: none;
+    }
+
+    .seccion1, .seccion2{
+        display:flex;
+    }
+
+    .articulos {
+        width: 22%;
+        margin: 12px;
+    }
+
+
+
+    footer div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+    }
+    footer{
+        flex-direction: row;
+    }
+    .final{
+        display: block;
+        width: 100%;
+    }
+    } 
