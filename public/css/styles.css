@@ -325,9 +325,8 @@ width: 45%;
         display:flex;
     }
 
-    .articulos {
+    main section div .contenedor-article{
         width: 22%;
-        margin: 12px;
     }
 
 
